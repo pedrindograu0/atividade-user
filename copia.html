@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+            font-size: 150px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>    
+        <h1>
+            Site copião
+        </h1>
+            <script>
+                function pergunte(pergunta, sim, nao) { 
+  if (confirm(pergunta)) sim()//if(confirm("Você concorda?")) mostrarOK()
+  else nao(); // else mostrarCancel()
+}
+
+function mostrarOk() {
+  alert( "Você concordou." );
+}
+
+function mostrarCancel() {
+  alert( "Você cancelou a execução" );
+}
+
+// Chamando a função pergunte com os parâmetros em ordem
+pergunte("Você concorda?", mostrarOk, mostrarCancel);
+
+    </script>
+</body>
+</html>
